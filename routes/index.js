@@ -18,25 +18,17 @@ router.get('/home', function(req, res, next) {
 /* GET about page. */
 router.get('/about', function(req, res, next) {
   res.render('index', { 
-    title: 'About'
+    title: 'About Me'
   });
 });
 
 /* GET products page. */
-router.get('/products', function(req, res, next) {
+router.get('/projects', function(req, res, next) {
   res.render('index', { 
-    title: 'Products'
+    title: 'Projects'
   });
 });
 
-/* GET services page. */
-router.get('/services', function(req, res, next) {
-  res.render('index', { 
-    title: 'Service'
-  });
-});
-
-/* GET contact page. */
 router.get('/contact', function(req, res, next) {
   res.render('index', { 
     title: 'Contact us'
