@@ -1,29 +1,33 @@
-/* custom css goes here */
+/* Reset some default styles and set global styles */
 @charset "UTF-8";
-*{
-    margin: o;
+* {
+    margin: 0;
     padding: 0;
-    font-family: 'Crimson Text', serif;
     box-sizing: border-box;
-    text-align: center;
 }
 
-
-body{
-    background: linear-gradient(#f5f2ef,#94aec2);
-   
-    color:whitesmoke;
+/* Body and HTML styles */
+body, html {
+    height: 100%;
 }
-.header{
+
+/* Body styles */
+body {
+    background: linear-gradient(#f5f2ef, #94aec2);
+    color: whitesmoke;
+    font-family: 'Crimson Text', serif;
+}
+
+/* Header styles */
+.header {
     min-height: 100vh;
     width: 100%;
-
     background-position: center;
     background-size: cover;
-
 }
 
-nav{
+/* Navigation styles */
+nav {
     display: flex;
     padding: 1% 4%;
     justify-content: space-between;
@@ -31,36 +35,33 @@ nav{
     flex-wrap: wrap;
 }
 
-nav img{
-width: 90px;
-text-align: left;
-}
-
-.navBar{
-    flex:1;
+nav img {
+    width: 90px;
     text-align: left;
-   
 }
 
-.navBar li{
+.navBar {
+    flex: 1;
+    text-align: left;
+}
+
+.navBar li {
     list-style-type: none;
     display: inline-block;
-    margin: 20px, 10px ;
-    padding: 3px, 5px;
+    margin: 20px 10px;
+    padding: 3px 5px;
     position: relative;
 }
 
-.navBar li a{
+.navBar li a {
     color: black;
     text-decoration: none;
     font-size: 20px;
     position: relative;
     padding-right: 10px;
-    
-
 }
 
-.navBar li::after{
+.navBar li::after {
     content: "";
     width: 0%;
     height: 4px;
@@ -69,35 +70,42 @@ text-align: left;
     margin: auto;
     transition: 0.6s;
 }
-.navBar li:hover::after{
-    width:100%
+
+.navBar li:hover::after {
+    width: 100%;
 }
 
-.webText{
+/* WebText styles */
+.webText {
     margin-top: 25%;
 }
-.webText p{
+
+.webText p {
     font-size: 20px;
-    margin-top: 0%;
+    margin-top: 0;
 }
 
-.webText h1{
+.webText h1 {
     font-size: 30px;
 }
 
-#form{
+/* Form styles */
+#form {
     margin-top: 15%;
-    color: rgb(7, 7, 6);
-   
-    }
+    color: #070706;
+}
+
+/* Video styles */
 video {
-        width: 400px;
-        padding: 15px;
-        margin: 15px;
-        background-color:black;
-        border:2px white solid;
-        box-shadow: 10px 10px 5px black;
-        }
-#projects{
+    width: 400px;
+    padding: 15px;
+    margin: 15px;
+    background-color: black;
+    border: 2px white solid;
+    box-shadow: 10px 10px 5px black;
+}
+
+/* Projects section styles */
+#projects {
     text-align: left;
-}    
+}
